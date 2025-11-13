@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: pentaho/pentaho-kettle
-          ref: 9.3.0.0-428
+          ref: 9.3.0.0-R
           path: kettle
 
       - name: Set up Java 11
@@ -45,5 +45,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: pentaho-kettle-9.3.0.0-428
+          name: pentaho-kettle-9.3.0.0-R
           path: artifacts
